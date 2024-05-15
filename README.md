@@ -1,3 +1,9 @@
+### Quick Start
+
+```sh
+docker compose up
+```
+
 ### Label Studio
 
 Need to make sure that data in the s3 bucket are:
