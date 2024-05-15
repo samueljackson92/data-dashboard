@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  label_studio:
+    container_name: label-studio
+    image: heartexlabs/label-studio:latest
+    volumes:
+      - ./data:/label-studio/data
+    ports:
+      - '8080:8080'
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana-oss:latest
+    ports:
+      - '3000:3000'
